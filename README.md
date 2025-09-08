@@ -31,7 +31,7 @@ Nearly all updates involved revising the attributes column of the GFF file. If t
 For the remaining 137 genes, we established rules to determine whether to add the newly mapped MANE gene or to remove the existing overlapping one in v5.2 or both (i.e., a replacement). 
 
 We first grouped the overlaps by gene symbols. If there is more than one overlap detected for a group, then it was flagged for manual inspection (25 distinct genes, 52 including copies). More than one overlap may be reported if there are multiple copies of a distinct gene and/or a single copy has multiple overlaps with existing ones in v5.2. Both scenarios require special care to ensure copy numbers are accurately annotated, and if multiple overlaps pose competing conditions, to decide whether to discard the existing.
-The remaining are genes mapped as a single copy with an overlap with a non-synonymous gene in v5.2. Note that additional overlaps found for genes previously updated through synonyms matching were ignored, as these overlaps are inherited from v5.2. We applied the following logic (presented as pseudocode, see `notebooks/edit.ipynb` for implementation details) to determine which actions to take:
+The remaining are genes mapped as a single copy with an overlap with a non-synonymous gene in v5.2. Note that additional overlaps found for genes previously updated through synonyms matching were ignored, as these overlaps are inherited from v5.2. We applied the following logic (presented as pseudocode below, see `notebooks/edit.ipynb` for implementation details) to determine which actions to take:
 
 ```
 gene_A <- new gene projected from MANE v1.4
