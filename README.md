@@ -2,7 +2,7 @@
 
 ## Motivation
 
-Using LiftOff, we projected genes from the latest MANE gene annotation (v1.4) on GRCh38 onto the T2T-CHM13 v2.0 assembly. We identified 256 distinct genes (296 including additional copies) that are missing from the v5.2 gene annotation. See results/mapped_but_missing.csv for the list of MANE genes that could be mapped but are missing from the CHM13 v5.2 gene annotation. 
+Using LiftOff, we projected genes from the latest MANE gene annotation (v1.4) on GRCh38 onto the T2T-CHM13 v2.0 assembly. We identified 256 distinct MANE genes (296 including additional copies) that are missing from the v5.2 gene annotation. See r`esults/mapped_but_missing.csv` for the list of MANE genes that could be mapped but are missing from the CHM13 v5.2 gene annotation. 
 
 **The goal of this v5.3 update was to add as many of the missing MANE genes as possible.**
 
